@@ -3,7 +3,7 @@ import "./App.css";
 import bell from "./assets/bell.mp3";
 
 const pomoSuggetions = [
-  { focusTime: 1, breakTime: 1 },
+  { focusTime: 25, breakTime: 5 },
   { focusTime: 50, breakTime: 10 },
   { focusTime: 90, breakTime: 30 },
 ];
