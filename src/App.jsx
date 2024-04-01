@@ -3,7 +3,7 @@ import "./App.css";
 import bell from "./assets/bell.mp3";
 
 const pomoSuggetions = [
-  { focusTime: 25, breakTime: 5 },
+  { focusTime: 1, breakTime: 1 },
   { focusTime: 50, breakTime: 10 },
   { focusTime: 90, breakTime: 30 },
 ];
@@ -79,6 +79,11 @@ function App() {
             clearInterval(timerCountdown.current);
             audio.play();
             setState("Start");
+            if (timerState == "Focus") {
+              setTimerState("Break");
+            } else {
+              setTimerState("Focus");
+            }
             return timerRef.current;
           } else if (sec === 0) {
             return {
