@@ -26,14 +26,14 @@ function App() {
     Focus: {
       bgColor: "#fdd6db",
       timerBg: "#f85c71",
-      btnBg: "#faadb7",
-      hover: "#fa8595",
+      btnBg: "#fa8595",
+      hover: "#faadb7",
     },
     Break: {
-      bgColor: "#cbfcf8",
-      timerBg: "#2ff2e1",
-      btnBg: "#98f9f0",
-      hover: "#63f5e8",
+      bgColor: "#BFECF5",
+      timerBg: "#00B4D8",
+      btnBg: "#40C7E2",
+      hover: "#80D9EB",
     },
   };
 
@@ -136,8 +136,8 @@ function App() {
             id="resetButton"
             onClick={handleTimer}
             style={{
-              "--bg-color": color[timerState].btnBg,
-              "--bg-hover-color": color[timerState].hover,
+              "--bg-color": color[timerState].hover,
+              "--bg-hover-color": color[timerState].btnBg,
               boxShadow: "rgba(255,255,255,1) 1.95px 1.95px 2.6px",
             }}
           >
